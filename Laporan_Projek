@@ -1,0 +1,384 @@
+Nama : Seno Dwiyanto Prasetyo
+NIM : L200230168
+
+Laporan Proyek: Website Personal
+
+#Deskripsi Proyek
+Website personal ini dikembangkan sebagai platform digital untuk memperkenalkan identitas saya secara profesional.  
+Website ini dirancang untuk menampilkan informasi tentang diri saya, pengalaman, juga projek yang telah saya buat.  
+Dengan adanya website ini, saya dapat dengan mudah berbagi informasi tentang diri saya kepada khalayak luas, baik itu mahasiswa dan Dosen.
+
+#Fitur Website
+1. Halaman Utama (`index.html`)
+- Menampilkan profil singkat dengan foto dan deskripsi diri.
+- Tombol untuk melihat portfolio dan kontak lebih lanjut.
+- Tombol untuk mengganti mode tampilan website antara mode gelap dan mode terang.
+
+2. Halaman Portfolio (`portfolio.html`)
+- Menampilkan daftar proyek atau pengalaman kerja yang pernah dilakukan.
+- Deskripsi singkat tentang setiap proyek beserta gambar ilustrasi.
+
+3. Halaman Kontak (`contact.html`)
+- Formulir untuk mengirim pesan langsung.
+- Informasi kontak lengkap (WhatsApp, Instagram, dan Email).
+- Ikon media sosial yang bisa diklik untuk langsung menuju profil.
+
+5. Navigasi Interaktif
+- Menu navigasi yang responsif dan user-friendly.
+- Highlight pada menu yang sedang aktif agar pengguna tahu di halaman mana mereka berada.
+
+6. Desain Responsif
+- Menggunakan CSS Flexbox & Grid agar website dapat menyesuaikan tampilan di berbagai ukuran layar.
+- Penggunaan media queries untuk tampilan yang optimal di smartphone, tablet, dan desktop.
+
+7. Hosting di GitHub Pages
+- Website dapat diakses online tanpa perlu server tambahan.
+- Update otomatis saat ada perubahan di repository GitHub.
+
+#Fitur Utama:
+- Halaman utama yang berisi informasi profil.
+- Halaman portfolio untuk menampilkan proyek-proyek saya.
+- Halaman kontak yang berisi informasi media sosial dan email.
+- Mode gelap dan terang yang dapat diubah oleh pengguna.
+
+#Teknologi yang Digunakan:
+- HTML: Untuk struktur halaman web.
+- CSS: Untuk tampilan dan desain.
+- GitHub Pages: Untuk hosting website.
+  
+#Link Hosting
+Website ini telah di-hosting menggunakan GitHub Pages, berikut adalah
+Link yang telah di-hosting <https://warnaair.github.io/PersonalWebsite/index.html>
+
+
+#Struktur Direktori
+📁 Website Personal
+├── 📄 index.html         # Halaman utama untuk website
+├── 📄 portfolio.html     # Halaman untuk menampilkan portfolio
+├── 📄 contact.html       # Halaman untuk menampilkan kontak
+├── 📄 style.css          # File CSS untuk styling/mengatur halaman website       
+└── 📁 Assets             # Assets/Gambar yang diperlukan untuk membuat website
+     ├── 📄 profil.jpg
+     ├──📄 portfolio1.jpg
+     └── 📄 portfolio2.jpg
+
+#Implementasi Kode
+<-- Struktur HTML dari index.html -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama - Profil Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portfolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleDarkMode()">Gelap/Terang</button>
+    </header>
+
+    <main>
+        <section class="intro">
+            <img src="foto_profil.jpeg" alt="Foto Profil" class="profile-pic">
+            <h2>Halo, saya Seno Dwiyanto Prasetyo</h2>
+            <p>Saya seorang mahasiswa di Universitas Muhammadiyah Surakarta dari Fakultas FKI
+                 jurusan Informatika.</p>
+            <p>Sekarang saya sudah berada disemester 4 dan sedang mempelajari mata kuliah Pemrograman WEB.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Seno Dwiyanto Prasetyo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+<-- Struktur HTML dari portfolio.html -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portofolio Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portfolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <h2>Proyek dan Pengalaman</h2>
+            <div class="portfolio-gallery">
+                <img src="magang.jpg" alt="Proyek 1">
+                <img src="permainan.png" alt="Proyek 2">
+            </div>
+            <div class="portfolio-details">
+                <article>
+                    <h3>Pengalaman selama magang</h3>
+                    <p>Magang diperpustakaan daerah dibagian kearsipan selama 3 bulan.</p>
+                </article>
+                <article>
+                    <h3>Membuat Permainan Sederhana</h3>
+                    <p>Membuat permainan pilihan ganda menggunakan artikuler story lane.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Seno Dwiyanto Prasetyo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+<-- Struktur HTML dari contact.html -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Kontak Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portfolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Hubungi Saya</h2>
+            <p><i class="fas fa-phone"></i> Nomor: +62 821-5735-9885</p>
+            <p><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/nama_kamu" target="_blank">@SenoDP</a></p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:nama@email.com">IniAkunSaya@Gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Seno Dwiyanto Prasetyo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+<-- Struktur CSS untuk tampilan website -->
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #a1d874;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #444;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.portfolio-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-details article {
+    background: #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #444;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #007BFF;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #646464;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #333;
+}
+
+.dark-mode .portfolio-details article {
+    background: #444;
+    color: #ddd;
+}
+
+.dark-mode nav a:hover {
+    background-color: #222;
+}
+
+.dark-mode button {
+    background-color: #ff9800;
+    color: #1e1e1e;
+}
+
+.dark-mode button:hover {
+    background-color: #e68900;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .portfolio-gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .portfolio-gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio-details article {
+        width: 100%;
+    }
+}
+
+footer {
+    margin-top: auto;
+} 
+
+#Kesimpulan
+Website portofolio personal berhasil dikembangkan dengan mengimplementasikan berbagai fitur yang membantu pengalaman pengguna. Website ini tidak hanya menjadi representasi
+digital dari identitas personal, tetapi juga menunjukan keterampilan dalam web modern.
